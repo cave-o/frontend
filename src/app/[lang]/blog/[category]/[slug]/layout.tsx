@@ -102,7 +102,7 @@ export async function generateStaticParams() {
     options
   );
 
-  return articleResponse.data.map(
+  return articleResponse.data?.map(
     (article: {
       attributes: {
         slug: string;
