@@ -68,6 +68,6 @@ export async function generateStaticParams() {
                     slug: string;
                 };
             };
-        }) => ({ slug: article.attributes.slug, category: article.attributes.slug })
+        }) => ({ slug: article.attributes.slug, category: article.attributes.category.slug })
     );
 }
